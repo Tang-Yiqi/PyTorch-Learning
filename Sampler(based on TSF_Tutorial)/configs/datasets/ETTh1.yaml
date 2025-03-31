@@ -1,0 +1,20 @@
+root_dir: ../Datasets/
+task: forecasting
+name:
+- ETTh1
+sync:
+  n_channels: 7
+  input_len: 96
+  output_len: 96
+  batch_size: 32
+  device: mps
+  seed: 1234
+  if_sample: true
+  sample_size: 64
+  cycle: 168
+  dtype: float32
+train_ratio: 0.6
+val_ratio: 0.2
+test_ratio: 0.2
+pred_type: m2m
+scale: false

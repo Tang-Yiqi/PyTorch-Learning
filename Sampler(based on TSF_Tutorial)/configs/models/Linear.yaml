@@ -1,0 +1,13 @@
+name: Linear
+task: forecasting
+sync:
+  n_channels: 7
+  input_len: 96
+  output_len: 96
+  batch_size: 32
+  device: mps
+  seed: 1234
+  if_sample: true
+  sample_size: 64
+  cycle: 168
+  dtype: float32
